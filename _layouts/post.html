@@ -20,7 +20,9 @@
                         <h3 style="color: black">{{ page.serise }}</h3>
                     </center>
                 </div>
-                <center><img src="/{{ page.image }}" width="100%"/><center>
+                <center>
+                    <img src="/{{ page.image }}" style="max-width: 100%"/>
+                </center>
                 <div class="content-layer">
                     {{ content }}
                 </div>
@@ -32,7 +34,7 @@
                     <div class="tag">{{ tag }}</div>
                     {% endfor %}
                 </div>
-                
+
             </div>
             <div class="side-padding">
                 {% include components/side-series.html %}
