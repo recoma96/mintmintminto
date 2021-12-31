@@ -23,3 +23,9 @@ h3, h4, h5, h6 {
     cursor: pointer;
     margin-bottom: 5px;
 }
+
+.custom-triangle {
+    height: 100%;
+    content: $triangle-img;
+    padding: 5px;
+}

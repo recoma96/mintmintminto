@@ -42,7 +42,10 @@ body {
         }
         .tag-item {
             cursor: pointer;
-            color: $side-tag-font-color;
+            a {
+                color: $side-tag-font-color;
+                text-decoration: none;
+            }
         }
     }
 
@@ -90,6 +93,27 @@ body {
     // the content site for post and about
     .content-layer {
         margin-bottom: 40px;
+    }
+
+    .series-layer {
+        background-color: $series-item-background-color;
+        color: $series-item-font-color;
+        margin-bottom: 7px;
+
+        .series-item {
+            padding: 10px 40px 10px 40px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 8px #005bb1;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .posts-layer {
+            padding: 5px 40px 5px 40px;
+            a {
+                color: $series-item-font-color;
+                text-decoration: none;
+            }
+        }
     }
 }
 .footer {

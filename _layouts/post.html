@@ -17,12 +17,14 @@
                     <center>
                         <h1>{{ page.title }}</h1>
                         <h3>{{ page.date | date: "%Y-%m-%d"}}</h3>
-                        <h3 style="color: black">{{ page.serise }}</h3>
+                        <h3 style="color: black">{{ page.series }}</h3>
                     </center>
                 </div>
+                {% if page.image != "" %}
                 <center>
                     <img src="/{{ page.image }}" style="max-width: 100%"/>
                 </center>
+                {% endif %}
                 <div class="content-layer">
                     {{ content }}
                 </div>
@@ -31,7 +33,9 @@
                 <div class="tag-layer" style="margin-bottom: 20px">
                     <img class="tag-img"/>
                     {% for tag in page.tags %}
+                    {% if site.data.tags contains tag %}
                     <div class="tag">{{ tag }}</div>
+                    {% endif %}
                     {% endfor %}
                 </div>
 
