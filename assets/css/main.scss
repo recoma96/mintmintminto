@@ -1,0 +1,67 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Main font
+// font-family: 'Noto Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+// colors
+// backgrounc color
+$background-color: #EBF6FF;
+$padding-color: #D0E9E5;
+
+// component color
+$navbar-background-color: #267F70;
+$navbar-font-color: white;
+$navbar-shadow-color: #02947B;
+
+$summary-background-color: #ECFCF9;
+$summary-post-color: #ECFCF9;
+$summary-post-shadow-color: #00BF9E;
+
+$tag-background-color: #40ACFF;
+$tag-font-color: white;
+
+$side-component-color: #EBF6FF;
+$side-title-font-color: #005A9F;
+$side-series-font-color: #424653;
+$side-tag-font-color: #2F95E4;
+$side-shadow-color: #005A9F;
+
+$line-color: #707070;
+$mint-line-color: #267F70;
+
+$series-item-background-color: #DBEFFF;
+$series-item-font-color: #005A9F;
+
+// font color
+$font-title-color: #249884;
+$font-subtitle-color: #005A9F;
+$font-color: #717171;
+
+// images
+$svg-tag: url('{{ site.baseurl }}/assets/img/tag-img.svg');
+
+
+// responsibility
+$media-line-width-tablet: 1200px;
+$media-line-width-mobile: 760px;
+
+@mixin media-query-in-desktop() {
+    @media screen and (min-width: $media-line-width-tablet) {
+        @content;
+    }
+}
+@mixin media-query-in-tablet() {
+    @media screen and (min-width: $media-line-width-mobile) and (max-width: $media-line-width-tablet) {
+        @content;
+    }
+}
+@mixin media-query-in-mobile() {
+    @media screen and (max-width: $media-line-width-mobile) {
+        @content;
+    }
+}
+
+// import_sass
+@import "navbar", "layers", "base";

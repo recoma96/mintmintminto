@@ -1,0 +1,35 @@
+#navbar-pc {
+    display: none;
+    
+    margin-top: 50px;
+
+    width: 70%;
+    height: 50px;
+    background-color: $navbar-background-color;
+    color: $navbar-font-color;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px $navbar-shadow-color;
+
+    #menu {
+        width: 70%;
+        padding: 10px 100px 10px 100px;
+
+        display: grid;
+        grid: '. . .';
+
+        .item {
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    }
+
+    @include media-query-in-desktop() {
+        display: block;
+    }
+}
+#navbar-mobile {
+    display: block;
+    @include media-query-in-desktop() {
+        display: none;
+    }
+}
