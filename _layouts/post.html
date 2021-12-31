@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    {% assign posts = site.posts %}
+    <body>
+        {% include components/navbar-mobile.html %}
+        <div class="layout">
+            <div class="side-padding">
+            </div>
+            <div class="main-layout">
+                <center>
+                    {% include components/navbar-pc.html %}
+                </center>
+                
+                <div class="title_layer">
+                    <center>
+                        <h1>{{ page.title }}</h1>
+                        <h3>{{ page.date | date: "%Y-%m-%d"}}</h3>
+                        <h3 style="color: black">{{ page.serise }}</h3>
+                    </center>
+                </div>
+                <center><img src="/{{ page.image }}" width="100%"/><center>
+                <div class="content-layer">
+                    {{ content }}
+                </div>
+                <p>{{ site.base_url }}</p>
+
+                <div class="tag-layer" style="margin-bottom: 20px">
+                    <img class="tag-img"/>
+                    {% for tag in page.tags %}
+                    <div class="tag">{{ tag }}</div>
+                    {% endfor %}
+                </div>
+                
+            </div>
+            <div class="side-padding">
+                {% include components/side-series.html %}
+                {% include components/side-tags.html %}
+            </div>
+        </div>
+        <div class="footer">
+    {% include footer.html %}
+    {% include foot.html %}
+    </body>
+</html>

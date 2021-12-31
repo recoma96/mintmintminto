@@ -5,6 +5,7 @@ date:   2021-12-29 01:04:25 +0900
 serise: "mintmintminto"
 summary: "This Summary is for mintmintminto style, 민트민트민토스타일이 뭔지 보여주지"
 tags: ["markdown", "minto", "yes", "example"]
+image: "./assets/posts/haskellorithm.png"
 ---
 
 # H1

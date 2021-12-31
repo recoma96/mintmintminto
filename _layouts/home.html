@@ -4,12 +4,13 @@
 
     {% assign posts = site.posts %}
     <body>
+        {% include components/navbar-mobile.html %}
         <div class="layout">
             <div class="side-padding">
             </div>
             <div class="main-layout">
                 <center>
-                    {% include components/navbar.html %}
+                    {% include components/navbar-pc.html %}
                 </center>
                 
                 <div class="post-summary-layer">
@@ -17,7 +18,7 @@
                     
                     <!-- The container -->
                     <div class="post-summary-item">
-                        <h2>{{ post.title }}</h2>
+                        <a href="{{ post.url }}" style="text-decoration-line: none;"><h2>{{ post.title }}</h2></a>
                         <div class="sub-title">
                             <h3>{{ post.date | date: "%Y.%m.%d" }} | {{ post.serise }}</h3>
                         </div>
@@ -40,9 +41,7 @@
                 {% include components/side-tags.html %}
             </div>
         </div>
-        <div class="footer">
-
-        </div>
+    {% include footer.html %}
     {% include foot.html %}
     </body>
 </html>

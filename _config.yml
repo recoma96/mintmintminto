@@ -2,7 +2,7 @@ title: Mintmintmintminto?
 email: seokbong60@gmail.com
 description: >-
   Do you linke mint? I like minto!
-baseurl: ""
+baseurl: "http://127.0.0.1:4000"
 url: "http://127.0.0.1:4000"
 
 theme: minima

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    {% assign posts = site.posts %}
+    <body>
+        {% include components/navbar-mobile.html %}
+        <div class="layout">
+            <div class="side-padding">
+            </div>
+            <div class="main-layout">
+                <center>
+                    {% include components/navbar-pc.html %}
+                </center>
+                
+                <div class="title_layer"></div>
+                <div class="content-layer">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="side-padding">
+                {% include components/side-series.html %}
+                {% include components/side-tags.html %}
+            </div>
+        </div>
+    {% include footer.html %}
+    {% include foot.html %}
+    </body>
+</html>
