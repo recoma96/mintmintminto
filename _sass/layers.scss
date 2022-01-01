@@ -7,6 +7,7 @@ body {
     //font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Nanum Gothic', sans-serif;
     color: $font-color;
+    filter: blur(0);
 
 }
 
@@ -98,7 +99,7 @@ body {
     .series-layer {
         background-color: $series-item-background-color;
         color: $series-item-font-color;
-        margin-bottom: 7px;
+        margin-bottom: 15px;
 
         .series-item {
             padding: 10px 40px 10px 40px;
@@ -106,8 +107,11 @@ body {
             box-shadow: 4px 4px 8px #005bb1;
             border-radius: 4px;
             font-weight: 600;
+            cursor: pointer;
+            
         }
         .posts-layer {
+            display: none;
             padding: 5px 40px 5px 40px;
             a {
                 color: $series-item-font-color;

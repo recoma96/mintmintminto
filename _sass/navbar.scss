@@ -29,18 +29,50 @@
 }
 #navbar-mobile {
     display: block;
+    cursor: pointer;
 
     width: 100%;
     background-color: $navbar-background-color;
     color: $navbar-font-color;
     height: 50px;
+    padding-top: 10px;
 
     p {
-        padding-top: 10px;
         font-size: 1.2em;
+        margin-top: 10px;
     }
 
     @include media-query-in-desktop() {
         display: none;
     }
+}
+#navbar-mobile-menu {
+    display: none;
+    cursor: pointer;
+    
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 4px $navbar-shadow-color;
+    color: $font-title-color;
+    font-weight: 600;
+    font-size: 1.3em;
+
+    a {
+        text-decoration: none;
+        color: $font-title-color;    
+    }
+    @include media-query-in-desktop() {
+        display: none;
+    }
+    .menu-item {
+        border-bottom: 1px solid $mint-line-color;
+        padding: 15px 20px 15px 20px;
+        @include media-query-in-desktop() {
+            display: none;
+        }
+    }
+
 }

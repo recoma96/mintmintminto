@@ -22,12 +22,13 @@
                     </div>
 
                     <!-- Series -->
+                    {% assign cnt = 0 %}
                     {% for series in site.data.series %}
                     <div class="series-layer">
-                        <div class="series-item">
+                        <div class="series-item" onclick="seriesContentOnClick('{{ cnt }}')">
                             {{ series }}
                         </div>
-                        <div class="posts-layer">
+                        <div class="posts-layer" id="post-layer-{{ cnt }}">
                             {% for post in posts %}
                             {% if post.series == series %}
                             <a href="{{ post.url }}"><p>[{{ post.date | date: "%Y.%m.%d" }}] {{ post.title }}</p></a>
@@ -35,6 +36,7 @@
                             {% endfor %}
                         </div>
                     </div>
+                    {% assign cnt = cnt | plus: 1 %}
                     {% endfor %}
                     <div style="margin-bottom: 100px;"></div>
                 </div>

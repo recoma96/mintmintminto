@@ -25,16 +25,9 @@
                         <div class="summary">
                             <p>{{ post.summary }}</p>
                         </div>
-                        <div class="tag-layer">
-                            <img class="tag-img"/>
-                            {% for tag in post.tags %}
-                            {% if site.data.tags contains tag %}
-                            <div class="tag">{{ tag }}</div>
-                            {% endif %}
-                            {% endfor %}
-                        </div>
+                        {% assign tags = post.tags %}
+                        {% include components/tag-layer.html %}
                     </div>
-
                     {% endfor %}
                 </div>
             </div>

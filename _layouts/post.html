@@ -29,15 +29,9 @@
                     {{ content }}
                 </div>
                 <p>{{ site.base_url }}</p>
-
-                <div class="tag-layer" style="margin-bottom: 20px">
-                    <img class="tag-img"/>
-                    {% for tag in page.tags %}
-                    {% if site.data.tags contains tag %}
-                    <div class="tag">{{ tag }}</div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
+                
+                {% assign tags = page.tags %}
+                {% include components/tag-layer.html %}
 
             </div>
             <div class="side-padding">
