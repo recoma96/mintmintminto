@@ -48,7 +48,7 @@ hello_2022()
 aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbccccccccccccccccdfdddddddddddddddddd
 ```
 
-# 글씨
+# 글씨 👌
 * Normal
 * _italics_
 * <del>Strikethrough</del>
@@ -56,7 +56,88 @@ aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbccccccccccccccccdfdddddddddddddddddd
 * --- em-dash ---
 * << guilemet >>
 * ... ellipsis
-* Emoji: 
+* Emoji: 👌
+* **bold**
+
+# paragraph
+> This is quote \\
+> Quote 2 \\
+> Quote3 Quote3 Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3 Quote3 Quote3 Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3 Quote3 Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3 Quote3 Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3Quote3
+
+This is a\\
+line break
+
+* * *
+
+# Ordered List
+* Numbering
+    1. Num1
+        * Pay Attention
+    2. Num2
+    3. Num3
+
+# Foot Notes
+Here's a simple footnote,[^1] and here's a longer one.[^2]
+
+[^1]: And here is the definition.
+[^2]:
+    Second Definition
+    > with using quote
+
+# Tasks
+- [ ] Incomplete
+    - [x] Complete
+- [x] complete
+
+# Links
+[google](https://www.google.com)
+
+[google][gid]
+
+[gid]: http://google.com
+
+# Table
+
+|---------+---------+---------|
+| Header1 | Header2 | Header3 |
+|---------|:--------|--------:|
+| 1       | 2       | 3       |
+| 4       | 5       | 6       |
+|---------+---------+---------|
+| 8       | 95      | 106     |
+| 894     | 345     | 866     |
+|=========+=========+=========|
+| Foot1   | Foot2   | Foot3   |
+|---------+---------+---------|
+
+# MATH
+
+$$
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha \\
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha \\
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+a^2 = b^2 + c^2 - 2bc\cos\alpha
+$$
+
+<br >
+<br >
+
+$$
+\begin{aligned}
+\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+ & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+ & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+ & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
+ & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+\end{aligned}
+$$
 
 # 코드
 ```python

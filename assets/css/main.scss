@@ -40,6 +40,10 @@ $font-title-color: #249884;
 $font-subtitle-color: #005A9F;
 $font-color: #717171;
 
+// kramdown color style
+$blockquote-line-color: #004880;
+$blockquote-background-color: #cce9ff;
+
 // images
 $svg-tag: url('{{ site.baseurl }}/assets/img/tag-img.svg');
 $triangle-img: url('{{ site.baseurl }}/assets/img/triangle.svg');

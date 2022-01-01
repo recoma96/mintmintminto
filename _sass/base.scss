@@ -19,9 +19,27 @@ pre {
     padding: 10px;
     box-shadow: 1.3px 1px 2px black;
 }
+strong {
+    color: black;
+    font-weight: 700;
+}
+del {
+    color: red;
+}
 code {
     font-family: 'Nanum Gothic Coding', monospace;
     white-space: pre-wrap;
+}
+.MathJax_SVG_Display {
+    color: black;
+    white-space: pre-wrap;
+}
+
+blockquote {
+    padding: 3px 20px 3px 20px;
+    margin-left: 0px;
+    border-left: 4px solid $blockquote-line-color;
+    background-color: $blockquote-background-color;
 }
 .tag {
     height: 20px;
