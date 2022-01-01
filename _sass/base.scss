@@ -6,7 +6,12 @@ h3, h4, h5, h6 {
     color: $font-subtitle-color;
 }
 img {
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 2px 2px 6px rgb(7, 131, 94);
+    max-width: 100%;
+
+    &:hover {
+        box-shadow: 3px 3px 14px rgb(6, 112, 80);
+    }
 }
 .tag-img {
     content: $svg-tag;
@@ -32,9 +37,6 @@ code {
 }
 th, td {
     padding: 10px;
-}
-p {
-    line-height: 140%;
 }
 table {
     background-color: $table-head-background-color;
@@ -64,8 +66,8 @@ blockquote {
     background-color: $blockquote-background-color;
 }
 .tag {
-    height: 20px;
-    padding: 3px 10px 3px 10px;
+    height: 22px;
+    padding: 1px 10px 5px 10px;
     background-color: $tag-background-color;
     color: $tag-font-color;
     font-size: 0.8em;

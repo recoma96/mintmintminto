@@ -8,6 +8,12 @@ body {
     color: $font-color;
     position: relative;
     margin: 0;
+    font-size: 1.1em;
+    line-height: 180%;
+
+    @include media-query-in-mobile() {
+        font-size: 1em;
+    }
 }
 
 .common-line {
@@ -51,7 +57,8 @@ body {
         .series-item {
             color: $side-series-font-color;
             cursor: pointer;
-            margin-bottom: -9px;
+            margin-bottom: -10px;
+            line-height: 130%;
 
             &:hover {
                 border-left: 2px solid #0c3b33;
@@ -60,6 +67,8 @@ body {
         }
         .tag-item {
             cursor: pointer;
+            line-height: 95%;
+            font-size: 0.9em;
             a {
                 color: $side-tag-font-color;
                 text-decoration: none;
@@ -80,9 +89,15 @@ body {
     background-color: $background-color;
     padding: 0px 50px 0px 50px;
     word-wrap: break-word;
+    height: auto;
+
+    @include media-query-in-desktop() {
+        border-left: 2px dashed $main-layer-border-color;
+        border-right: 2px dashed $main-layer-border-color;
+    }
 
     @include media-query-in-mobile() {
-        padding: 0px 10px 0px 10px;
+        padding: 0px 10px 40px 10px;
     }
 
     // post summary for home, tag result
@@ -92,7 +107,7 @@ body {
 
         .post-summary-item {
             
-            padding: 15px 40px 50px 40px;
+            padding: 15px 40px 30px 40px;
             margin-bottom: 40px;
             background-color: $summary-background-color;
             box-shadow: 2px 2px 7px $summary-post-shadow-color;
@@ -171,6 +186,10 @@ body {
             a {
                 color: $series-item-font-color;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -2,8 +2,8 @@ function seriesContentOnClick(seriesName) {
     const componentName = "#post-layer-" + seriesName;
     
     if($(componentName).css("display") == "none") {
-        $(componentName).fadeIn();
+        $(componentName).css("display", "block");
     } else {
-        $(componentName).fadeOut();
+        $(componentName).css("display", "none");
     }
 }
