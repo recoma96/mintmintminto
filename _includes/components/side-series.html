@@ -6,7 +6,7 @@
         <h3>SERIES</h3>
         <div class="line"></div>
         {% for data in site.data.series %}
-        <p class="series-item">{{ data }}</p>
+        <a href="/posts/series?series={{ data }}" style="text-decoration: none;"><p class="series-item">{{ data }}</p></a>
         {% endfor %}
     </center>
 </div>
