@@ -5,7 +5,7 @@
         <div class="line"></div>
         <p class="tag-item">
             {% for tag in site.data.tags %}
-            <a href="">{{ tag }}</a>, 
+            <a href="/posts/tag?tag={{ tag }}" style="text-decoration: none;">{{ tag }}</a>, 
             {% endfor %}
         </p>
     </center>

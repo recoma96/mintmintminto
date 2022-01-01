@@ -2,7 +2,9 @@
 <img class="tag-img"/>
     {% for tag in tags %}
     {% if site.data.tags contains tag %}
-    <div class="tag">{{ tag }}</div>
+    <a href="/posts/tag?tag={{ tag }}" style="text-decoration: none;">
+        <div class="tag">{{ tag }}</div>
+    </a>
     {% endif %}
     {% endfor %}
 </div>
