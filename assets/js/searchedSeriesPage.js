@@ -8,6 +8,7 @@ function filterBySeriseName(seriseName) {
 $(document).ready(() => {
 
     let querySeries = new URLSearchParams(location.search).get("series");
+    querySeries = decodeURIComponent(querySeries);
 
     $('#h1-title').text(querySeries);
 

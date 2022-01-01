@@ -8,7 +8,7 @@ function filterByTagname(tagname) {
     });
 }
 $(document).ready(() => {
-    const queryTag = getUrlParams().tag;
+    const queryTag = decodeURIComponent(getUrlParams().tag);
     $('#h1-title').text(queryTag);
     filterByTagname(queryTag);
 });

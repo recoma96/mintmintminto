@@ -41,7 +41,7 @@ It can be controled in ```_config.yml```
 |```title```|String|```---```|Title of website|
 
 ### Store Series
-To make your series visible on screen go to ```_data/series.yml``` and write your series name. That is exmaple. **series can be only ascii code. not unicode yet too.** It will be updated for this.
+To make your series visible on screen go to ```_data/series.yml``` and write your series name. That is exmaple.
 ```yml
 # _data/series.yml
 - kramdown-test
@@ -50,7 +50,7 @@ To make your series visible on screen go to ```_data/series.yml``` and write you
 ```
 But If you want to visible series that has with **space bar**, then covered with **double quotes** like last case of exmaple.
 ### Store Tags
-Same process with "Store Series" go to ```_data/tags.yml``` and write tag for visible. That is Example **Tag can be only ascii code. not unicode yet too.** It will be updated for this.
+Same process with "Store Series" go to ```_data/tags.yml``` and write tag for visible. That is Example.
 ```yml
 # _data/tags.yml
 - jekyll
@@ -60,6 +60,7 @@ Same process with "Store Series" go to ```_data/tags.yml``` and write tag for vi
 - test
 - project
 ```
+
 ### Post Configuration
 |Variable|Type|Default|Specification|
 |---|---|---|---|
