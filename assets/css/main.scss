@@ -44,6 +44,11 @@ $font-color: #717171;
 $blockquote-line-color: #004880;
 $blockquote-background-color: #cce9ff;
 
+// table colors
+$table-head-background-color: #d5edff;
+$table-head-underline-color: #013b68;
+$table-head-font-color: #013b68;
+
 // images
 $svg-tag: url('{{ site.baseurl }}/assets/img/tag-img.svg');
 $triangle-img: url('{{ site.baseurl }}/assets/img/triangle.svg');

@@ -30,6 +30,18 @@ code {
     font-family: 'Nanum Gothic Coding', monospace;
     white-space: pre-wrap;
 }
+th, td {
+    padding: 10px;
+}
+table {
+    background-color: $table-head-background-color;
+    box-shadow: 1.3px 1px 2px black;
+    th {
+        border-bottom: 2px solid $table-head-underline-color;
+        color: $table-head-font-color;
+    }
+}
+// math
 .MathJax_SVG_Display {
     color: black;
     white-space: pre-wrap;
