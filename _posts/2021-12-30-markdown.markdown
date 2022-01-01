@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "마크다운 예시에양2"
+title:  "마크다운 테스트"
 date:   2021-12-30 01:04:25 +0900
-series: "mintmintminto"
-summary: "This Summary is for mintmintminto style, 민트민트민토스타일이 뭔지 보여주지"
-tags: ["markdown", "minto", "yes", "example"]
-image: "assets/posts/haskellorithm.png"
+series: "kramdown-test"
+summary: "마크다운 제대로 잘 나오는 지 테스트"
+tags: ["markdown", "test", "kramdown", "jekyll"]
+image: ""
 ---
 
 # H1
