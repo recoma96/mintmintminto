@@ -41,7 +41,7 @@ It can be controled in ```_config.yml```
 |```title```|String|```---```|Title of website|
 
 ### Store Series
-To make your series visible on screen go to ```_data/series.yml``` and write your series name. That is exmaple. **Serise can be only ascii code. not unicode yet too.** It will be updated for this.
+To make your series visible on screen go to ```_data/series.yml``` and write your series name. That is exmaple. **series can be only ascii code. not unicode yet too.** It will be updated for this.
 ```yml
 # _data/series.yml
 - kramdown-test
