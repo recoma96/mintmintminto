@@ -3,13 +3,9 @@ email: seokbong60@gmail.com
 description: >-
   Do you linke mint? I like minto!
 
-# For test
-# baseurl: ""
-# url: "http://127.0.0.1:4000"
-
+baseurl: "/mintmintminto"
 # For production
 url: "https://vector-7.github.io"
-baseurl: "/Mintmintmintminto"
 
 theme: minima
 plugins:
