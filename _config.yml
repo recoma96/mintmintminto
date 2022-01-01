@@ -2,8 +2,14 @@ title: Mintmintmintminto?
 email: seokbong60@gmail.com
 description: >-
   Do you linke mint? I like minto!
-baseurl: "http://127.0.0.1:4000"
-url: "http://127.0.0.1:4000"
+
+# For test
+#baseurl: ""
+#url: "http://127.0.0.1:4000"
+
+# For production
+url: "https://blog.sweetcase.kr"
+baseurl: "/mintmintminto"
 
 theme: minima
 plugins:
