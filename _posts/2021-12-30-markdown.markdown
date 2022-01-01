@@ -35,9 +35,79 @@ hello_2022()
 
 # 이미지
 이미지 불러오기
-기존 마크다운과 일치하나 이미지 루트 의 맨 앞에 "{{ site.baseurl }}을 붙입니다."
+기존 마크다운과 일치하나 이미지 루트 의 맨 앞에 site.baseurl 을 붙입니다.
 * Example
-<div>
+
+```c
 ![testimage]({{ site.baseurl }}/assets/posts/mdtest/example1.gif)
-</div>
+```
+
 ![testimage]({{ site.baseurl }}/assets/posts/mdtest/example1.gif)
+
+```bash
+aaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbccccccccccccccccdfdddddddddddddddddd
+```
+
+# 글씨
+* Normal
+* _italics_
+* <del>Strikethrough</del>
+* -- endash --
+* --- em-dash ---
+
+# 코드
+```python
+import sys
+import heapq
+input = sys.stdin.readline
+MAX = 100_001
+
+N, K = map(int, input()[:-1].split())
+times = [float('inf')] * MAX
+
+
+def process(N, K):
+    Q = [(0, N)]
+    # (횟수, 위치)
+
+
+    # 예외처리
+    if N == K:
+        return ["0", "1"]
+    if N > K:
+        return [str(N - K), "1"]
+
+    min_cnt = 0
+
+
+    def __move(cnt, next_n):
+        if 0 <= next_n <= 100_000 and times[K] == float('inf'):
+            heapq.heappush(Q, (cnt + 1, next_n))
+            
+    while Q:
+        cur_cnt, cur_n = heapq.heappop(Q)
+
+        # 도착 지점인 지 확인
+        if cur_n == K and (times[K] == float('inf') or times[K] == cur_cnt):
+            min_cnt += 1
+
+        if times[cur_n] >= cur_cnt:
+            # 처음 도달하거나 더 빠른 시간으로 도달한 경우
+            # 근데 어차피 힙을 돌리기 때문에 그럴 일은 없다
+            # 적립 후 움직이기
+            times[cur_n] = cur_cnt
+            __move(cur_cnt, cur_n + 1)
+            __move(cur_cnt, cur_n - 1)
+            if cur_n < K:
+                # 작을 때만 가자
+                __move(cur_cnt, cur_n * 2)
+            
+
+
+        # 도달했는 지 확인
+        # 힙으로 돌렸기 때문에 맨 처음 도착하는 순이 가장 빠른 부분
+
+    return [str(times[K]), str(min_cnt)]
+
+print('\n'.join(process(N, K)))
+```
