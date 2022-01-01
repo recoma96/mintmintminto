@@ -59,6 +59,10 @@ body {
     background-color: $background-color;
     padding: 0px 50px 0px 50px;
 
+    @include media-query-in-mobile() {
+        padding: 0px 30px 0px 30px;
+    }
+
     // post summary for home, tag result
     .post-summary-layer {
         width: 100%;
