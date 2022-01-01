@@ -8,7 +8,7 @@ baseurl: "/mintmintminto"
 url: "https://vector-7.github.io"
 
 # For Test
-host: 192.168.1.109
+# host: 192.168.1.109
 
 theme: minima
 plugins:
@@ -18,7 +18,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
