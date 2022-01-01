@@ -31,7 +31,7 @@
                         <div class="posts-layer" id="post-layer-{{ cnt }}">
                             {% for post in posts %}
                             {% if post.series == series %}
-                            <a href="{{ post.url }}"><p>[{{ post.date | date: "%Y.%m.%d" }}] {{ post.title }}</p></a>
+                            <a href="{{ site.baseurl | append: post.url }}"><p>[{{ post.date | date: "%Y.%m.%d" }}] {{ post.title }}</p></a>
                             {% endif %}
                             {% endfor %}
                         </div>

@@ -4,10 +4,11 @@ description: >-
   Do you linke mint? I like minto!
 
 baseurl: "/mintmintminto"
-# For Test
-#url: "https://127.0.0.1:4000"
 # For production
 url: "https://vector-7.github.io"
+
+# For Test
+host: 192.168.1.109
 
 theme: minima
 plugins:
