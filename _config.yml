@@ -9,7 +9,7 @@ description: >-
 
 # For production
 url: "https://vector-7.github.io"
-baseurl: "/mintmintminto"
+baseurl: ""
 
 theme: minima
 plugins:
