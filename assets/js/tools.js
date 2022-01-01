@@ -9,3 +9,9 @@ function getUrlParams() {
     );     
     return params; 
 }
+function space2unicode(target) {
+    return target.split(' ').join('%20m');
+}
+function unicode2space(target) {
+    return target.split('%20m').join(' ');
+}
