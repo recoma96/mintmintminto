@@ -1,8 +1,8 @@
 
 <div id="navbar-pc">
     <div id="menu">
-        <a href="/" style="text-decoration-line: none;"><div class="item">Home</div></a>
-        <a href="/series" style="text-decoration-line: none;"><div class="item">Series</div></a>
-        <a href="/about" style="text-decoration-line: none;"><div class="item">About</div></a>
+        <a href="{{ site.url | append: site.baseurl | append: '/' }}" style="text-decoration-line: none;"><div class="item">Home</div></a>
+        <a href="{{ site.baseurl | append: '/series' }}" style="text-decoration-line: none;"><div class="item">Series</div></a>
+        <a href="{{ site.baseurl | append: '/about' }}" style="text-decoration-line: none;"><div class="item">About</div></a>
     </div>
 </div>

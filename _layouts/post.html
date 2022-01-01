@@ -22,7 +22,7 @@
                 </div>
                 {% if page.image != "" %}
                 <center>
-                    <img src="/{{ page.image }}" style="max-width: 100%"/>
+                    <img src="{{ site.baseurl | append: '/' | append: page.image }}" style="max-width: 100%"/>
                 </center>
                 {% endif %}
                 <div class="content-layer">

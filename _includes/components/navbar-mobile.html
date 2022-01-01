@@ -5,8 +5,8 @@
         </center>
     </div>
     <div id="navbar-mobile-menu">
-        <a href="/"><div class="menu-item"><center>Home</center></div></a>
-        <a href="/series"><div class="menu-item"><center>Series</center></div></a>
-        <a href="/about"><div class="menu-item"><center>About</center></div></a>
+        <a href="{{ site.url | append: site.baseurl | append: '/' }}"><div class="menu-item"><center>Home</center></div></a>
+        <a href="{{ site.baseurl | append: '/series' }}"><div class="menu-item"><center>Series</center></div></a>
+        <a href="{{ site.baseurl | append: '/about' }}"><div class="menu-item"><center>About</center></div></a>
     </div>
 </div>
