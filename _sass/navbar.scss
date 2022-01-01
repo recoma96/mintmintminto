@@ -9,6 +9,10 @@
     border-radius: 5px;
     box-shadow: 2px 2px 20px $navbar-shadow-color;
 
+    &:hover {
+        box-shadow: 4px 4px 30px $navbar-shadow-hovered-color;
+    }
+
     #menu {
         width: 100%;
         padding: 10px 0px 10px 0px;

@@ -8,7 +8,6 @@ body {
     color: $font-color;
     position: relative;
     margin: 0;
-
 }
 
 .common-line {
@@ -38,6 +37,10 @@ body {
         padding: 2px 10px 2px 10px;
         box-shadow: 1px 1px 8px $side-shadow-color;
         position: fixed;
+
+        &:hover {
+            box-shadow: 3px 3px 24px $side-shadow-hovered-color;
+        }
 
         .line {
             width: 100%;
@@ -92,9 +95,25 @@ body {
             padding: 15px 40px 50px 40px;
             margin-bottom: 40px;
             background-color: $summary-background-color;
-            box-shadow: 4px 4px 7px $summary-post-shadow-color;
+            box-shadow: 2px 2px 7px $summary-post-shadow-color;
             
+            &:hover {
+                box-shadow: 4px 4px 20px $summary-post-shadow-hovered-color;
+            }
+            
+            .link-title {
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .sub-title {
+                display: flex;
+                margin-top: -30px;
+            }
+
             .summary {
+                margin-top: -10px;
                 padding-bottom: 30px;
             }
 
@@ -110,8 +129,14 @@ body {
         flex-wrap: wrap;
     }
 
-    .title_layer {
+    .title-layer {
         margin-top: 50px;
+
+        .series-title {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     // the content site for post and about
     .content-layer {
@@ -126,10 +151,18 @@ body {
         .series-item {
             padding: 10px 40px 10px 40px;
             font-size: 1.1em;
-            box-shadow: 4px 4px 8px #005bb1;
+            box-shadow: 4px 4px 8px $series-item-shadow-color;
             border-radius: 4px;
             font-weight: 600;
             cursor: pointer;
+
+            &:hover {
+                box-shadow: 5px 5px 10px $series-item-shadow-hovered-color;
+            }
+            &:active {
+                box-shadow: 2px 2px 6px $series-item-shadow-hovered-color;
+                background-color: $series-item-background-clicked-color;
+            }
             
         }
         .posts-layer {
@@ -146,4 +179,8 @@ body {
     width: 100%;
     height: 120px;
     background-color: #267F70;
+
+    a {
+        color: #254e6e;
+    }
 }

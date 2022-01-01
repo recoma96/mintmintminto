@@ -8,5 +8,8 @@ function filterBySeriseName(seriseName) {
 $(document).ready(() => {
 
     let querySeries = new URLSearchParams(location.search).get("series");
+
+    $('#h1-title').text(querySeries);
+
     filterBySeriseName(querySeries);
 });

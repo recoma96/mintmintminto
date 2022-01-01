@@ -9,5 +9,6 @@ function filterByTagname(tagname) {
 }
 $(document).ready(() => {
     const queryTag = getUrlParams().tag;
+    $('#h1-title').text(queryTag);
     filterByTagname(queryTag);
 });

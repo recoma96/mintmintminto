@@ -13,11 +13,18 @@
                     {% include components/navbar-pc.html %}
                 </center>
                 
-                <div class="title_layer">
+                <div class="title-layer">
                     <center>
                         <h1>{{ page.title }}</h1>
-                        <h3>{{ page.date | date: "%Y-%m-%d"}}</h3>
-                        <h3 style="color: black">{{ page.series }}</h3>
+                        <h3 style="font-weight: 300;">{{ page.date | date: "%Y-%m-%d"}}</h3>
+                        <a 
+                            href="{{ site.baseurl | append: '/posts/series?series=' | append: page.series }}"
+                            style="text-decoration-line: none;"
+                        >
+                            <h3 style="color: black" class="series-title">
+                                {{ page.series }}
+                            </h3>
+                        </a>
                     </center>
                 </div>
                 {% if page.image != "" %}

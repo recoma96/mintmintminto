@@ -15,10 +15,12 @@ $padding-color: #D0E9E5;
 $navbar-background-color: #EBF6FF;
 $navbar-font-color: #267F70;
 $navbar-shadow-color: #67e6d0;
+$navbar-shadow-hovered-color: #17ceaf;
 
 $summary-background-color: #ECFCF9;
 $summary-post-color: #ECFCF9;
 $summary-post-shadow-color: #00BF9E;
+$summary-post-shadow-hovered-color: #06ad92;
 
 $tag-background-color: #40ACFF;
 $tag-font-color: white;
@@ -28,18 +30,22 @@ $side-component-color: #EBF6FF;
 $side-title-font-color: #005A9F;
 $side-series-font-color: #424653;
 $side-tag-font-color: #2F95E4;
-$side-shadow-color: #005A9F;
+$side-shadow-color: #076ab6;
+$side-shadow-hovered-color: #035594;
 
 $line-color: #707070;
 $mint-line-color: #267F70;
 
 $series-item-background-color: #DBEFFF;
 $series-item-font-color: #005A9F;
+$series-item-shadow-color: #005bb1;
+$series-item-shadow-hovered-color: #00519c;
+$series-item-background-clicked-color: #bbe0ff;
 
 // font color
 $font-title-color: #249884;
 $font-subtitle-color: #005A9F;
-$font-color: #717171;
+$font-color: #4d4d4d;
 
 // kramdown color style
 $blockquote-line-color: #004880;
