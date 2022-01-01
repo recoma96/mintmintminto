@@ -1,4 +1,11 @@
-
+p, span {
+    font-size: 1.1em;
+    line-height: 180%;
+}
+li {
+    font-size: 1.05em;
+    line-height: 160%;
+}
 h1, h2 {
     color: $font-title-color;
 }
@@ -34,6 +41,9 @@ del {
 code {
     font-family: 'Nanum Gothic Coding', monospace;
     white-space: pre-wrap;
+    font-size: 0.9em;
+    line-height: 70%;
+
 }
 th, td {
     padding: 10px;
@@ -66,8 +76,8 @@ blockquote {
     background-color: $blockquote-background-color;
 }
 .tag {
-    height: 22px;
-    padding: 1px 10px 5px 10px;
+    height: 20px;
+    padding: 3px 10px 3px 10px;
     background-color: $tag-background-color;
     color: $tag-font-color;
     font-size: 0.8em;
@@ -75,6 +85,10 @@ blockquote {
     margin-right: 5px;
     cursor: pointer;
     margin-bottom: 5px;
+
+    @include media-query-in-mobile() {
+        padding: 3px 10px 1px 10px;
+    }
 
     &:hover {
         background-color: $tag-hovered-color;

@@ -8,8 +8,6 @@ body {
     color: $font-color;
     position: relative;
     margin: 0;
-    font-size: 1.1em;
-    line-height: 180%;
 
     @include media-query-in-mobile() {
         font-size: 1em;
@@ -136,9 +134,8 @@ body {
     }
     
     .tag-layer {
-        height: 30px;
+        height: auto;
         padding-top: 15px;
-        padding-bottom: 20px;
         border-top: 1px solid $line-color;
         display: flex;
         flex-wrap: wrap;
